@@ -10,8 +10,8 @@ services:
       - "7000:15672"
       - "7001:5672"
     environment:
-      - RABBITMQ_DEFAULT_USER=user
-      - RABBITMQ_DEFAULT_PASS=password
+      - RABBITMQ_DEFAULT_USER=admin
+      - RABBITMQ_DEFAULT_PASS=myStrongPass
 
   redis:
     image: redis:5-alpine
